@@ -80,12 +80,12 @@ CAPTION "Options"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "可调整大小",IDC_RESIZABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,21,117,10
-    CONTROL         "Movable (via middle mouse button)",IDC_MOVABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,36,127,10
+    CONTROL         "可移动 (按住鼠标中键)",IDC_MOVABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,36,127,10
     CONTROL         "阴影",IDC_SHOW_SHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,41,10
     CONTROL         "圆角",IDC_ROUNDED_CORNER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,21,117,10
     DEFPUSHBUTTON   "确定",IDOK,198,91,50,14
     PUSHBUTTON      "取消",IDCANCEL,252,91,50,14
-    LTEXT           "tips: You can restore the window frame by uncheck the main menu option: \nView -> Flowin -> %s -> No frame",IDC_NO_FRAME_TIPS,10,69,292,20
+    LTEXT           "提示: 您可以通过取消选中主菜单选项来恢复窗口边框: \n视图 -> 浮窗 -> %s -> 无边框",IDC_NO_FRAME_TIPS,10,69,292,20
     GROUPBOX        "无边框选项",IDC_STATIC,7,7,295,58
 END
 
@@ -159,6 +159,7 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
+
 
 
 
