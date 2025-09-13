@@ -248,7 +248,7 @@ flowin_menu_group::sp_t build_flowin_menu_nodes()
                 };
             }
 
-            if (auto node = snap_group->new_node(menu_commands::snap_show, "Show", flowin_menu_show_on_all))
+            if (auto node = snap_group->new_node(menu_commands::snap_show, "显示", flowin_menu_show_on_all))
             {
                 node->action = [id = node->id](cfg_t& config) { notify_flowin_command(config, id); };
 
