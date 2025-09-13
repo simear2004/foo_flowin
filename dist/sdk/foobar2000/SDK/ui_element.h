@@ -563,20 +563,20 @@ constexpr GUID ui_element_subclass_dsp = { 0xa6a93251, 0xf0f8, 0x4bed,{ 0xb9, 0x
 bool ui_element_subclass_description(const GUID & id, pfc::string_base & out);
 
 
-#define ReplaceUIElementCommand "æ›¿æ¢ç”¨æˆ·ç•Œé¢å…ƒç´ ..."
-#define ReplaceUIElementDescription "ç”¨å¦ä¸€ä¸ªç”¨æˆ·ç•Œé¢å…ƒç´ æ›¿æ¢å½“å‰çš„ç”¨æˆ·ç•Œé¢å…ƒç´ ã€‚"
+#define ReplaceUIElementCommand "Ìæ»»ÓÃ»§½çÃæÔªËØ..."
+#define ReplaceUIElementDescription "ÓÃÁíÒ»¸öÓÃ»§½çÃæÔªËØÌæ»»µ±Ç°µÄÓÃ»§½çÃæÔªËØ¡£"
 
-#define CopyUIElementCommand "å¤åˆ¶ç”¨æˆ·ç•Œé¢å…ƒç´ "
-#define CopyUIElementDescription "å¤åˆ¶å½“å‰ç”¨æˆ·ç•Œé¢å…ƒç´ å½“ Windows å‰ªè´´æ¿ã€‚"
+#define CopyUIElementCommand "¸´ÖÆÓÃ»§½çÃæÔªËØ"
+#define CopyUIElementDescription "¸´ÖÆµ±Ç°ÓÃ»§½çÃæÔªËØµ± Windows ¼ôÌù°å¡£"
 
-#define PasteUIElementCommand "ç²˜è´´ç”¨æˆ·ç•Œé¢å…ƒç´ "
-#define PasteUIElementDescription "ç”¨ Windows å‰ªè´´æ¿å†…å®¹æ›¿æ¢å½“å‰ç”¨æˆ·ç•Œé¢å…ƒç´ ã€‚"
+#define PasteUIElementCommand "Õ³ÌùÓÃ»§½çÃæÔªËØ"
+#define PasteUIElementDescription "ÓÃ Windows ¼ôÌù°åÄÚÈİÌæ»»µ±Ç°ÓÃ»§½çÃæÔªËØ¡£"
 
-#define CutUIElementCommand "å‰ªåˆ‡ç”¨æˆ·ç•Œé¢å…ƒç´ "
-#define CutUIElementDescription "å°†å½“å‰ç”¨æˆ·ç•Œé¢å…ƒç´ å¤åˆ¶åˆ° Windows å‰ªè´´æ¿å¹¶å°†å…¶æ›¿æ¢ä¸ºç©ºçš„ç”¨æˆ·ç•Œé¢å…ƒç´ ã€‚"
+#define CutUIElementCommand "¼ôÇĞÓÃ»§½çÃæÔªËØ"
+#define CutUIElementDescription "½«µ±Ç°ÓÃ»§½çÃæÔªËØ¸´ÖÆµ½ Windows ¼ôÌù°å²¢½«ÆäÌæ»»Îª¿ÕµÄÓÃ»§½çÃæÔªËØ¡£"
 
-#define AddNewUIElementCommand "æ·»åŠ æ–°çš„ç”¨æˆ·ç•Œé¢å…ƒç´ ..."
-#define AddNewUIElementDescription "ç”¨æ–°çš„ç”¨æˆ·ç•Œé¢å…ƒç´ æ›¿æ¢å·²é€‰å®šçš„ç©ºç™½ç©ºé—´ã€‚"
+#define AddNewUIElementCommand "Ìí¼ÓĞÂµÄÓÃ»§½çÃæÔªËØ..."
+#define AddNewUIElementDescription "ÓÃĞÂµÄÓÃ»§½çÃæÔªËØÌæ»»ÒÑÑ¡¶¨µÄ¿Õ°×¿Õ¼ä¡£"
 
 //! \since 2.0
 class NOVTABLE ui_config_callback {
