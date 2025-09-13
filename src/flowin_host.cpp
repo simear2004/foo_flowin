@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <shobjidl.h>
 #include <comdef.h>
 #include <dwmapi.h>
@@ -148,7 +148,7 @@ public:
 
     static void g_get_name(pfc::string_base& out)
     {
-        out = "Flowin";
+        out = "浮窗";
     }
 
     static ui_element_config::ptr g_get_default_configuration()
@@ -640,9 +640,9 @@ private:
             pfc::string8 element_name;
             uGetWindowText(*this, element_name);
             pfc::string_formatter msg;
-            msg << " You are about to delete \"" << uGetWindowText(*this).c_str()
-                << "\".\n This action cannot be undone.  Do you want to continue?";
-            if (uMessageBox(*this, msg, "Warning", MB_OKCANCEL | MB_ICONWARNING) == IDOK)
+            msg << " 您即将删除 \"" << uGetWindowText(*this).c_str()
+                << "\".\n 此作无法撤消，您想继续吗？";
+            if (uMessageBox(*this, msg, "警告", MB_OKCANCEL | MB_ICONWARNING) == IDOK)
                 fb2k::inMainThread([this]() { flowin_core::get()->remove_flowin(this->host_config_->guid, true); });
             break;
         }
@@ -859,7 +859,7 @@ private:
         SelectObjectScope scope(dc, (HGDIOBJ)callback_->query_font_ex(ui_font_default));
         CRect rc;
         GetClientRect(&rc);
-        dc.DrawText(_T("Click to add new element."), -1, &rc, DT_NOPREFIX | DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        dc.DrawText(_T("点击添加新元素。"), -1, &rc, DT_NOPREFIX | DT_CENTER | DT_VCENTER | DT_SINGLELINE);
     }
 
     BOOL on_erase_bkgnd(CDCHandle dc)
