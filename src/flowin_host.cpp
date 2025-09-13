@@ -641,7 +641,7 @@ private:
             uGetWindowText(*this, element_name);
             pfc::string_formatter msg;
             msg << " 您即将删除 \"" << uGetWindowText(*this).c_str()
-                << "\".\n 此作无法撤消，您想继续吗？";
+                << "\"。\n 此作无法撤消，您想继续吗？";
             if (uMessageBox(*this, msg, "警告", MB_OKCANCEL | MB_ICONWARNING) == IDOK)
                 fb2k::inMainThread([this]() { flowin_core::get()->remove_flowin(this->host_config_->guid, true); });
             break;
