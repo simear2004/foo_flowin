@@ -55,7 +55,7 @@ public:
 	virtual void show(HWND parent, const char * msg, t_size msg_length, const char * title, t_size title_length) = 0;
 	void show(HWND parent, const char * msg, const char * title) {show(parent, msg, SIZE_MAX, title, SIZE_MAX);}
 
-	static void g_show(HWND parent, const char * msg, const char * title = "Information");
+	static void g_show(HWND parent, const char * msg, const char * title = "信息");
 	static void g_complain(HWND parent, const char * whatFailed, const char * msg);
 	static void g_complain(HWND parent, const char * whatFailed, const std::exception & e);
 };

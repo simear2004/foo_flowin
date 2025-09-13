@@ -7,7 +7,7 @@ void popup_message::g_show_ex(const char * p_msg,size_t p_msg_length,const char 
 
 
 void popup_message::g_complain(const char * what) {
-    g_show(what, "Information", icon_error);
+    g_show(what, "信息", icon_error);
 }
 
 void popup_message::g_complain(const char * p_whatFailed, const std::exception & p_exception) {

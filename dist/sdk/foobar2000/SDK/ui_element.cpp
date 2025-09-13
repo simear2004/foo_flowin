@@ -77,19 +77,19 @@ service_ptr_t<ui_element_config> ui_element_config::g_create(const void * data, 
 
 bool ui_element_subclass_description(const GUID & id, pfc::string_base & p_out) {
 	if (id == ui_element_subclass_playlist_renderers) {
-		p_out = "Playlist Renderers"; return true;
+		p_out = "播放列表渲染器"; return true;
 	} else if (id == ui_element_subclass_media_library_viewers) {
-		p_out = "Media Library Viewers"; return true;
+		p_out = "媒体库浏览器"; return true;
 	} else if (id == ui_element_subclass_selection_information) {
-		p_out = "Selection Information"; return true;
+		p_out = "所选项信息"; return true;
 	} else if (id == ui_element_subclass_playback_visualisation) {
-		p_out = "Playback Visualization"; return true;
+		p_out = "播放可视化"; return true;
 	} else if (id == ui_element_subclass_playback_information) {
-		p_out = "Playback Information"; return true;
+		p_out = "播放信息"; return true;
 	} else if (id == ui_element_subclass_utility) {
-		p_out = "Utility"; return true;
+		p_out = "工具"; return true;
 	} else if (id == ui_element_subclass_containers) {
-		p_out = "Containers"; return true;
+		p_out = "容器"; return true;
 	} else if ( id == ui_element_subclass_dsp ) {
 		p_out = "DSP"; return true;
 	} else {

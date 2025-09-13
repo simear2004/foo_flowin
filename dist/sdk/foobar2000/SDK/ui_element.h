@@ -563,20 +563,20 @@ constexpr GUID ui_element_subclass_dsp = { 0xa6a93251, 0xf0f8, 0x4bed,{ 0xb9, 0x
 bool ui_element_subclass_description(const GUID & id, pfc::string_base & out);
 
 
-#define ReplaceUIElementCommand "Replace UI Element..."
-#define ReplaceUIElementDescription "Replaces this UI Element with another one."
+#define ReplaceUIElementCommand "替换用户界面元素..."
+#define ReplaceUIElementDescription "用另一个用户界面元素替换当前的用户界面元素。"
 
-#define CopyUIElementCommand "Copy UI Element"
-#define CopyUIElementDescription "Copies this UI Element to Windows Clipboard."
+#define CopyUIElementCommand "复制用户界面元素"
+#define CopyUIElementDescription "复制当前用户界面元素当 Windows 剪贴板。"
 
-#define PasteUIElementCommand "Paste UI Element"
-#define PasteUIElementDescription "Replaces this UI Element with Windows Clipboard content."
+#define PasteUIElementCommand "粘贴用户界面元素"
+#define PasteUIElementDescription "用 Windows 剪贴板内容替换当前用户界面元素。"
 
-#define CutUIElementCommand "Cut UI Element"
-#define CutUIElementDescription "Copies this UI Element to Windows Clipboard and replaces it with an empty UI Element."
+#define CutUIElementCommand "剪切用户界面元素"
+#define CutUIElementDescription "将当前用户界面元素复制到 Windows 剪贴板并将其替换为空的用户界面元素。"
 
-#define AddNewUIElementCommand "Add New UI Element..."
-#define AddNewUIElementDescription "Replaces the selected empty space with a new UI Element."
+#define AddNewUIElementCommand "添加新的用户界面元素..."
+#define AddNewUIElementDescription "用新的用户界面元素替换已选定的空白空间。"
 
 //! \since 2.0
 class NOVTABLE ui_config_callback {
